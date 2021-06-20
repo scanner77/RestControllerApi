@@ -3,12 +3,14 @@ package lecture24.restcontroller.controller;
 import lecture24.restcontroller.eintity.Employee;
 import lecture24.restcontroller.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
+
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
@@ -16,6 +18,7 @@ public class EmployeeController {
         //Homepage
     @GetMapping("/")
     public String testing(){
+
         return "working fine...";
         }
 

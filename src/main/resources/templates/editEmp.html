@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>New Emp</title>
+</head>
+<body>
+<div class = "container">
+
+    <h1> Edit Employee </h1>
+    <div class = "container">
+    <form action = "#" th:action = "@{/web/editEmp}" method = "post" th:object = "${emp}" >
+
+        ID: <input type = "text" th:field = "*{id}" readonly = "readonly"/> <br><br>
+
+        Name: <input type = "text" th:field = "*{name}"/> <br><br>
+
+        Salary: <input type = "text" th:field = "*{salary}"/> <br><br>
+
+        <input type = "submit" value = "Update"  >
+    </form>
+    </div>
+</div>
+</body>
+</html>
